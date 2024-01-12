@@ -12,7 +12,7 @@ pipeline {
                 script {
                     def dockerfile = 'dockerfile'
                     def registry = 'localhost:5000'
-                    def imageName = 'myimage'
+                    def imageName = 'myimage123'
                     def imageTag = 'latest'
                     def dockerImage = docker.build("${registry}/${imageName}:${imageTag}", "-f ${dockerfile} .")
                     dockerImage.push()
